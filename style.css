@@ -5,5 +5,44 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(#329da8, #324ca8);
+    background: linear-gradient(#141414, #544e4e);
+}
+
+.container{
+        background-color: white;
+        margin: 100px auto;
+        padding: 20px auto;
+        text-align: center;
+        position: relative;
+        min-height: 75vh;
+        width: 500px;
+        
+}
+
+.container .header{
+    background: linear-gradient(#820808, #b34747); 
+    min-height: 20vh;
+}
+
+h3{
+    color: black;
+    float: left;
+    padding-top: 115px;
+}
+
+.add-item{
+    background: white;
+    position: absolute;
+    bottom: 0px;
+    width: 500px;
+
+}
+
+#input{
+    width: 470px;
+}
+
+
+#list{
+    background-color: white;
 }
