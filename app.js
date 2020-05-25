@@ -1,7 +1,7 @@
 const clear = document.querySelector(".clear");
 const dateElement = document.querySelector(".date");
 const list = document.querySelector("#list");
-const input = document.querySelector("#item");
+const input = document.querySelector("#item");i
 
 
 function addToDo(toDo){
@@ -12,6 +12,7 @@ function addToDo(toDo){
     </li>`
 
     const position = "beforeend";
+
 
     list.insertAdjacentHTML(position, text);
 

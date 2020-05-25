@@ -9,40 +9,148 @@ body{
 }
 
 .container{
-        background-color: white;
-        margin: 100px auto;
-        padding: 20px auto;
-        text-align: center;
-        position: relative;
-        min-height: 75vh;
-        width: 500px;
+       padding: 10px;
+       width: 380px;
+       margin: 0 auto;
         
 }
 
-.container .header{
-    background: linear-gradient(#820808, #b34747); 
-    min-height: 20vh;
+.header{
+   width: 380px;
+   height: 200px;
+   background-image: url(./img/bg.jpg);
+   background-size: 100% 200%;
+   background-repeat: no repeat;
+   border-radius: 16px 16px 0 0;
+   position: relative;
 }
 
-h3{
-    color: black;
-    float: left;
-    padding-top: 115px;
-}
-
-.add-item{
-    background: white;
+.clear{
+    width: 30px;
+    height: 30px;
     position: absolute;
-    bottom: 0px;
-    width: 500px;
-
+    right: 20px;
+    top: 20px;
 }
 
-#input{
-    width: 470px;
+.clear i{
+    font-size: 30px;
+    color: white;
 }
 
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
 
-#list{
+#date{
+    height: 20px;
+    width: 30px;
+    color: white;
+    font-size: 16px;
+    bottom: 10px;
+    left: 10px;
+}
+
+/* content */
+
+.content{
+    width: 380px;
+    height: 350px;
+    min-height: 350px;
     background-color: white;
+    overflow: auto;
+}
+
+.content ul{
+    padding: 0;
+    margin: 0;
+}
+
+.item{
+    width: 380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgbs(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left: 5px;
+    left: 15px;
+    top: 10px;
+}
+
+.item i.co:hover{
+    cursor: pointer;
+}
+
+.fa-check-circle{
+    color: #6eb200;
+}
+
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin: 0;
+    font-size: 20px;
+    left: 50px;
+    top: 5px;
+    background-color: white;
+    max-width: 285px;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+    color: black;
+}
+
+.item i.de{
+    position: absolute;
+    font-size: 25px;
+    right: 15px;
+    top: 10px;
+}
+
+.item i.de:hover{
+    color: #af0000;
+    cursor: pointer;
+}
+
+/*-------add item--------*/
+.add-to-do{
+    position: relative;
+    width: 360px;
+    height: 40px;
+    background-color: white;
+    padding:10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.add-to-do i{
+    position: absolute;
+    font-size: 40px;
+    color: #4162f6;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.add-to-do input::-webkit-input-placeholder{
+    color: #4162f6;
+    font-size: 20px;
 }
