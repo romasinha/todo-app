@@ -18,11 +18,11 @@ body{
 .header{
    width: 380px;
    height: 200px;
-   background-image: url(./img/bg.jpg);
    background-size: 100% 200%;
    background-repeat: no repeat;
    border-radius: 16px 16px 0 0;
    position: relative;
+  
 }
 
 .header .clear{

@@ -145,18 +145,27 @@ function dayNight(){
     var current = new Date();
     var day_night = current.getHours();
 
-           if(day_night < 12){
+           if(day_night < 17 ){
                var headerColor = document.getElementsByClassName("header")[0];
-               headerColor.style.backgroundImage = "url(img/sunset.jpg)";
+               headerColor.style.backgroundImage = "url(img/morning.jpg)";
+               
+               
 
            }
 
-           else{
+          else {
             var headerColor = document.getElementsByClassName("header")[0];
             headerColor.style.backgroundImage = "url(img/night.jpg)";
             
+            
+
+          }
+
            }
-}
+            
+            
+           
+
 
 dayNight();
 
