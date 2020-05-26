@@ -12,7 +12,7 @@ const LINE_THROUGH = "lineThrough";
 
 //Variables
 
-let LIST = [], id = 0;
+let LIST, id ;
 
 // get item from local storage
 
@@ -24,7 +24,7 @@ if(data){
     id = LIST.length; //set the id toh the last one in the list
     loadList(LIST); //load the list toh the UI
 }else{
-    //if data isn' empty
+    //if data isn't empty
     LIST = [];
     id = 0;
 }
@@ -38,7 +38,14 @@ function loadList(array){
 
 // add item to local storage (this code is added where the list array is)
 
-let data = localStorage.setItem("TODO", JSON.stringify(LIST));
+localStorage.setItem("TODO", JSON.stringify(LIST));
+
+// Clear the local storage
+
+clear.addEventListener("click", function(){
+    localStorage.clear();
+    location.reload();
+});
 
 //Displaying the date
 
@@ -133,7 +140,25 @@ list.addEventListener("click", function(event){
     }
 )
 
+// change background according to the hour of the day
+function dayNight(){
+    var current = new Date();
+    var day_night = current.getHours();
 
+           if(day_night < 12){
+               var headerColor = document.getElementsByClassName("header")[0];
+               headerColor.style.backgroundImage = "url(img/sunset.jpg)";
+
+           }
+
+           else{
+            var headerColor = document.getElementsByClassName("header")[0];
+            headerColor.style.backgroundImage = "url(img/night.jpg)";
+            
+           }
+}
+
+dayNight();
 
 
 

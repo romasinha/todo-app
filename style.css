@@ -75,7 +75,7 @@ body{
     height: 40px;
     min-height: 40px;
     position: relative;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -116,8 +116,9 @@ body{
 .item i.de{
     position: absolute;
     font-size: 27px;
-    padding-left: 330px;
+    padding-right: 3px;
     top: 7px;
+    right: 5px;
 }
 
 .item i.de:hover{
@@ -156,4 +157,16 @@ body{
 .add-to-do input::-webkit-input-placeholder{
     color: #4162f6;
     font-size: 20px;
+}
+
+body .night{
+    background-image: url(/img/night.jpg);
+}
+
+body .day{
+    background-image: url(/img/day.jpg);
+}
+
+body .sunset{
+    background-image: url(/img/sunset.jpg);
 }
