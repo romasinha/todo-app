@@ -145,23 +145,29 @@ function dayNight(){
     var current = new Date();
     var day_night = current.getHours();
 
-           if(day_night < 17 ){
+           if(day_night < 12 ){
                var headerColor = document.getElementsByClassName("header")[0];
                headerColor.style.backgroundImage = "url(img/morning.jpg)";
                
-               
+               }
 
-           }
+          else if(day_night < 17 ) {
+            var headerColor = document.getElementsByClassName("header")[0];
+            headerColor.style.backgroundImage = "url(img/noon.jpg)";
+            }
 
-          else {
+          else if(day_night < 20){
+            var headerColor = document.getElementsByClassName("header")[0];
+            headerColor.style.backgroundImage = "url(img/sun.jpg)";
+        }
+          else{
             var headerColor = document.getElementsByClassName("header")[0];
             headerColor.style.backgroundImage = "url(img/night.jpg)";
-            
-            
 
           }
 
-           }
+
+         }
             
             
            
